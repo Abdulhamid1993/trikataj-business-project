@@ -1,0 +1,25 @@
+.bg-slider {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bg-slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slider 15s infinite;
+}
+
+@keyframes slider {
+  0% { background-image: url('../images/pexels-francesco-ungaro-2325270.jpg'); }
+  33% { background-image: url('../images/pexels-enginakyurt-1460890.jpg'); }
+  66% { background-image: url('../images/pexels-enginakyurt-1487834.jpg'); }
+  100% { background-image: url('../images/imag.jpg'); }
+}
